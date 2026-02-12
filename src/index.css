@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* -----------------------------
+   Fonts base
+------------------------------ */
+
+/* Libre Baskerville (para párrafos si quieres) */
+@import "@fontsource/libre-baskerville/400.css";
+@import "@fontsource/libre-baskerville/400-italic.css";
+@import "@fontsource/libre-baskerville/700.css";
+@import "@fontsource/libre-baskerville/700-italic.css";
+
+/* Hubballi (subtítulos / nav) */
+@import "@fontsource/hubballi/400.css";
+
+/* -----------------------------
+   Baskerville BT (LOCAL)
+   Carpeta: src/assets/Fonts/baskerville/
+------------------------------ */
+
+@font-face {
+  font-family: "BaskervilleLocal";
+  src: url("./assets/Fonts/baskerville/BaskervilleBT.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BaskervilleLocal";
+  src: url("./assets/Fonts/baskerville/BaskervilleItalicBT.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BaskervilleLocal";
+  src: url("./assets/Fonts/baskerville/BaskervilleBoldBT.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BaskervilleLocal";
+  src: url("./assets/Fonts/baskerville/BaskervilleBoldItalicBT.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* -----------------------------
+   Brand tokens
+------------------------------ */
+:root {
+  --prestige-ivory: #F5F1EB;
+  --midnight-riviera: #0E1A24;
+}
+
+/* Tailwind v4 theme tokens */
+@theme {
+  --color-ivory: var(--prestige-ivory);
+  --color-midnight: var(--midnight-riviera);
+}
+
+/* -----------------------------
+   Suavizado / rendering (más parecido a Figma)
+------------------------------ */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ayuda a que se vea más “Figma-like” */
+  text-rendering: geometricPrecision;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+}
