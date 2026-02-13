@@ -14,6 +14,8 @@ import carBack from "../assets/carro/paisaje.webp";
 import BrandBanner from "../components/BrandBanner";
 import bannerImg from "../assets/brand/fondo.png"; // Add the correct path to the image
 import centerLogo from "../assets/brand/logo.png";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   return (
@@ -30,6 +32,8 @@ export default function HomePage() {
         centerLogoSrc={centerLogo}
         height={360}
       />
+      <Contact />
+      <Footer />
     </main>
   );
 }

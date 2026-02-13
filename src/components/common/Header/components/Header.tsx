@@ -13,7 +13,7 @@ type NavItem = { label: string; href: string };
 const NAV: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
+  { label: "Experience", href: "/experience" },
   { label: "Discover", href: "#discover" },
   { label: "Contact", href: "#contact" },
 ];
