@@ -1,6 +1,11 @@
 import { useMemo, useState } from "react";
 import DotMorphPagination from "./DotMorphPagination";
 
+// ✅ IMPORTA assets (Vite los empaqueta para producción)
+// Ajusta estas rutas según dónde esté este componente
+import italianImg from "../assets/experience/italian.webp";
+import ruedaIcon from "../assets/experience/rueda.png";
+
 type Slide = {
   title: string;
   description: string;
@@ -15,22 +20,22 @@ export default function ItalianExperience() {
         title: "Iconic Cycling Routes",
         description:
           "Rodamos por algunas de las rutas más emblemáticas de Italia, seleccionadas por su belleza, su historia y su equilibrio entre reto y experiencia.",
-        imageSrc: "/src/modules/Home/assets/experience/italian.webp",
-        iconSrc: "/src/modules/Home/assets/experience/rueda.png",
+        imageSrc: italianImg,
+        iconSrc: ruedaIcon,
       },
       {
         title: "Tuscan Landscapes",
         description:
           "Colinas, viñedos y pueblos medievales. Un ritmo perfecto para disfrutar el camino y la cultura a cada kilómetro.",
-        imageSrc: "/src/modules/Home/assets/experience/toscana.webp",
-        iconSrc: "/src/modules/Home/assets/experience/compass.webp",
+        imageSrc: italianImg,
+        iconSrc: ruedaIcon,
       },
       {
         title: "Gastronomy & Culture",
         description:
           "Sabores locales, paradas con historia y encuentros que vuelven cada día una experiencia completa.",
-        imageSrc: "/src/modules/Home/assets/experience/cultura.webp",
-        iconSrc: "/src/modules/Home/assets/experience/compass.webp",
+        imageSrc: italianImg,
+        iconSrc: ruedaIcon,
       },
     ],
     []
@@ -85,6 +90,7 @@ export default function ItalianExperience() {
                   alt={current.title}
                   className="absolute inset-0 h-full w-full object-cover select-none"
                   draggable={false}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -102,8 +108,9 @@ export default function ItalianExperience() {
                       <img
                         src={current.iconSrc}
                         alt="icon"
-                        className="h-[22px] w-[22px] opacity-80"
+                        className="h-[22px] w-[22px] opacity-80 select-none"
                         draggable={false}
+                        loading="lazy"
                       />
                     ) : (
                       <div className="h-[22px] w-[22px] rounded-full border border-black/30" />
@@ -139,7 +146,7 @@ export default function ItalianExperience() {
               {/* Controles abajo */}
               <div className="mt-auto max-lg:mt-[28px]">
                 <div className="mx-auto flex w-full max-w-[430px] items-center justify-between pb-[10px]">
-                  {/* ✅ Flechas más grandes */}
+                  {/* Flechas */}
                   <div className="flex items-center gap-[24px]">
                     <button
                       type="button"
@@ -160,15 +167,15 @@ export default function ItalianExperience() {
                     </button>
                   </div>
 
-                  {/*  Puntitos  */}
+                  {/* Puntitos */}
                   <DotMorphPagination
                     total={total}
                     active={active}
                     onChange={setActive}
-                    dotSize={10}          
-                    gap={12}              
-                    pillHeight={10}       
-                    backgroundColor="#F3F0E9" 
+                    dotSize={10}
+                    gap={12}
+                    pillHeight={10}
+                    backgroundColor="#F3F0E9"
                     boldPill
                   />
                 </div>

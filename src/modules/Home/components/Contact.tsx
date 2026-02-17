@@ -38,9 +38,7 @@ export default function Contact() {
 								fontWeight: 400,
 							}}
 						>
-							Cada viaje Pedal Prestige es curado y de aforo limitado.
-							<br />
-							No buscamos volumen, buscamos afinidad.
+							Convocamos un aforo limitado, vive la experiencia.
 						</p>
 					</div>
 
