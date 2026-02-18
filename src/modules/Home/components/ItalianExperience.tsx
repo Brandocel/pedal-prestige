@@ -1,14 +1,12 @@
 import { useMemo, useState } from "react";
 import DotMorphPagination from "./DotMorphPagination";
 
-// ✅ IMPORTA assets (Vite los empaqueta para producción)
-// Ajusta estas rutas según dónde esté este componente
 import italianImg from "../assets/experience/italian.webp";
 import ruedaIcon from "../assets/experience/rueda.png";
 
 type Slide = {
   title: string;
-  description: string;
+  description: string; // texto con saltos de línea
   imageSrc: string;
   iconSrc?: string;
 };
@@ -18,22 +16,29 @@ export default function ItalianExperience() {
     () => [
       {
         title: "Iconic Cycling Routes",
+        // ✅ 3 líneas EXACTAS como tu imagen
         description:
-          "Rodamos por algunas de las rutas más emblemáticas de Italia, seleccionadas por su belleza, su historia y su equilibrio entre reto y experiencia.",
+          "Rodamos por algunas de las rutas más emblemáticas de\n" +
+          "Italia, seleccionadas por su belleza, su historia y su equilibrio\n" +
+          "entre reto y experiencia.",
         imageSrc: italianImg,
         iconSrc: ruedaIcon,
       },
       {
         title: "Tuscan Landscapes",
         description:
-          "Colinas, viñedos y pueblos medievales. Un ritmo perfecto para disfrutar el camino y la cultura a cada kilómetro.",
+          "Colinas, viñedos y pueblos medievales.\n" +
+          "Un ritmo perfecto para disfrutar el camino\n" +
+          "y la cultura a cada kilómetro.",
         imageSrc: italianImg,
         iconSrc: ruedaIcon,
       },
       {
         title: "Gastronomy & Culture",
         description:
-          "Sabores locales, paradas con historia y encuentros que vuelven cada día una experiencia completa.",
+          "Sabores locales, paradas con historia\n" +
+          "y encuentros que vuelven cada día\n" +
+          "una experiencia completa.",
         imageSrc: italianImg,
         iconSrc: ruedaIcon,
       },
@@ -48,10 +53,13 @@ export default function ItalianExperience() {
   const goPrev = () => setActive((p) => (p - 1 + total) % total);
   const goNext = () => setActive((p) => (p + 1) % total);
 
+  // Partimos el texto en líneas
+  const descriptionLines = current.description.split("\n");
+
   return (
     <section className="w-full" style={{ backgroundColor: "#F3F0E9" }}>
       <div className="mx-auto max-w-[1440px] px-[80px] py-[62px] max-lg:px-[40px] max-sm:px-[20px]">
-        {/* Header arriba izquierda */}
+        {/* Header */}
         <header className="text-[#111827]">
           <h2
             className="text-[44px] leading-[1.05] tracking-[-0.02em] antialiased"
@@ -71,7 +79,7 @@ export default function ItalianExperience() {
           </p>
         </header>
 
-        {/* Layout principal */}
+        {/* Layout */}
         <div
           className="
             mt-[44px]
@@ -81,7 +89,7 @@ export default function ItalianExperience() {
             max-lg:block
           "
         >
-          {/* IZQUIERDA: Imagen grande */}
+          {/* Imagen */}
           <div className="col-span-7">
             <div className="relative w-full overflow-hidden bg-black/5">
               <div className="relative w-full" style={{ aspectRatio: "950 / 520" }}>
@@ -96,13 +104,13 @@ export default function ItalianExperience() {
             </div>
           </div>
 
-          {/* DERECHA */}
+          {/* Texto */}
           <div className="col-span-5 text-[#111827] max-lg:mt-[28px]">
             <div className="h-full flex flex-col max-lg:h-auto">
-              {/* Contenido centrado vertical */}
               <div className="my-auto max-lg:my-0">
-                <div className="mx-auto w-full max-w-[430px]">
-                  {/* Icon centrado */}
+                {/* Ancho suficiente para que no se rompan las líneas */}
+                <div className="w-full max-w-[620px]">
+                  {/* Icono */}
                   <div className="flex justify-center">
                     {current.iconSrc ? (
                       <img
@@ -117,7 +125,7 @@ export default function ItalianExperience() {
                     )}
                   </div>
 
-                  {/* Título centrado */}
+                  {/* Título */}
                   <h3
                     className="mt-[18px] text-center text-[30px] leading-[1.05] tracking-[-0.01em] antialiased"
                     style={{
@@ -129,24 +137,37 @@ export default function ItalianExperience() {
                     {current.title}
                   </h3>
 
-                  {/* Texto como diseño */}
-                  <p
-                    className="mt-[18px] mx-auto max-w-[520px] text-left text-[18px] leading-[1.25] antialiased"
+                  {/* ✅ Texto JUSTIFICADO con 3 líneas fijas */}
+                  <div
+                    className="mt-[18px] text-[18px] leading-[1.55] antialiased"
                     style={{
                       fontFamily: "BaskervilleLocal, Libre Baskerville, serif",
                       fontWeight: 400,
-                      textWrap: "balance",
                     }}
                   >
-                    {current.description}
-                  </p>
+                    {descriptionLines.map((line, idx) => {
+                      const isLast = idx === descriptionLines.length - 1;
+
+                      return (
+                        <p
+                          key={idx}
+                          className="m-0"
+                          style={{
+                            textAlign: isLast ? "left" : "justify",
+                            textAlignLast: isLast ? "left" : "justify",
+                          }}
+                        >
+                          {line}
+                        </p>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
 
-              {/* Controles abajo */}
+              {/* Controles */}
               <div className="mt-auto max-lg:mt-[28px]">
-                <div className="mx-auto flex w-full max-w-[430px] items-center justify-between pb-[10px]">
-                  {/* Flechas */}
+                <div className="flex w-full items-center justify-between pb-[10px]">
                   <div className="flex items-center gap-[24px]">
                     <button
                       type="button"
@@ -167,7 +188,6 @@ export default function ItalianExperience() {
                     </button>
                   </div>
 
-                  {/* Puntitos */}
                   <DotMorphPagination
                     total={total}
                     active={active}
@@ -182,7 +202,6 @@ export default function ItalianExperience() {
               </div>
             </div>
           </div>
-          {/* FIN DERECHA */}
         </div>
       </div>
     </section>

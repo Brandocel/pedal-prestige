@@ -11,7 +11,7 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
           "linear-gradient(180deg, #122736 0%, #0E1A24 60%, #0B151E 100%)",
       }}
     >
-      <div className="mx-auto max-w-[1440px] h-[600px] px-4 sm:px-6 md:px-10 lg:px-[80px]">
+      <div className="mx-auto max-w-[1440px] h-[500px] px-4 sm:px-6 md:px-10 lg:px-[80px]">
         <div className="h-full flex flex-col items-center pt-[78px] max-sm:pt-[52px]">
           {/* Título centrado */}
           <div className="text-center text-[#F3F0E9]">
@@ -37,7 +37,6 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                 mt-2
                 sm:mt-[10px]
                 lg:mt-3
-
                 text-[18px]
                 sm:text-[19px]
                 lg:text-[20px]
@@ -56,8 +55,8 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
 
           {/* Contenedor general */}
           <div className="mt-7 sm:mt-8 lg:mt-9 w-full max-w-[1040px]">
-            {/* ✅ BLOQUE: lo movemos a la derecha sin tocar estilos */}
-            <div className="mx-auto w-full max-w-[900px] text-left text-[#F3F0E9] pl-10 md:pl-160 lg:pl-50">
+            {/* ✅ BLOQUE: movido a la derecha (sin romper tailwind) */}
+            <div className="mx-auto w-full max-w-[900px] text-left text-[#F3F0E9] pl-[40px] md:pl-[160px] lg:pl-[50px]">
               {/* Párrafo 1 */}
               <p
                 className="
@@ -65,11 +64,9 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                   sm:text-[14px]
                   md:text-[14.5px]
                   lg:text-[15px]
-
                   leading-[1.6]
                   sm:leading-[1.55]
                   lg:leading-[1.5]
-
                   antialiased
                   italic
                   font-semibold
@@ -80,9 +77,11 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                   textWrap: "auto",
                 }}
               >
-                Pedal Prestige cuida los detalles y enfoca tu experiencia en la sensación de estar exactamente donde tienes que estar.
+                Pedal Prestige cuida los detalles y enfoca tu experiencia en la
+                sensación de estar exactamente donde tienes que estar.
                 <br className="max-sm:hidden" />
-                Nuestro propósito es diseñar momentos que se sientan naturales, cercanos y profundamente humanos.
+                Nuestro propósito es diseñar momentos que se sientan naturales,
+                cercanos y profundamente humanos.
               </p>
 
               {/* Párrafo 2 */}
@@ -91,16 +90,13 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                   mt-5
                   sm:mt-6
                   lg:mt-7
-
                   text-[13.5px]
                   sm:text-[14px]
                   md:text-[14.5px]
                   lg:text-[15px]
-
                   leading-[1.6]
                   sm:leading-[1.55]
                   lg:leading-[1.5]
-
                   antialiased
                   opacity-90
                   tracking-[0.01em]
