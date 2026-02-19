@@ -62,9 +62,9 @@ export default function Footer() {
 							aria-label="Footer legal"
 						>
 							<ul>
-								<li><a href="#terms">Terms & conditions</a></li>
-								<li><a href="#privacy">Privacy policy</a></li>
-								<li><a href="#disclaimer">Disclaimer</a></li>
+								<li><a href="/terms">Terms & conditions</a></li>
+								<li><a href="/privacy">Privacy policy</a></li>
+								<li><a href="/disclaimer">Disclaimer</a></li>
 							</ul>
 						</nav>
 					</div>
