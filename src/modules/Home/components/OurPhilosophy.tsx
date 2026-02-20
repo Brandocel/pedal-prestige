@@ -56,7 +56,7 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
           {/* Contenedor general */}
           <div className="mt-7 sm:mt-8 lg:mt-9 w-full max-w-[1040px]">
             {/* ✅ BLOQUE: centrado sin justificación */}
-            <div className="mx-auto w-full max-w-[900px] text-center text-[#F3F0E9]">
+            <div className="mx-auto w-full max-w-[620px] px-2 sm:px-0 text-center text-[#F3F0E9]">
               {/* Párrafo 1 */}
               <p
                 className="
@@ -79,7 +79,6 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
               >
                 Pedal Prestige cuida los detalles y enfoca tu experiencia en la
                 sensación de estar exactamente donde tienes que estar.
-                <br className="max-sm:hidden" />
                 Nuestro propósito es diseñar momentos que se sientan naturales,
                 cercanos y profundamente humanos.
               </p>

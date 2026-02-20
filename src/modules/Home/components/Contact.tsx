@@ -10,9 +10,9 @@ export default function Contact() {
 		<section className="w-full bg-[var(--prestige-ivory)] text-[#0E1A24]">
 			<div className="mx-auto max-w-[1440px] px-[clamp(20px,6.66vw,96px)] py-[clamp(52px,6.8vw,98px)]">
 				<div className="grid min-h-[clamp(520px,48vw,720px)] grid-cols-[1fr_clamp(380px,32vw,600px)] items-center gap-[clamp(40px,7.2vw,104px)] max-lg:min-h-0 max-lg:grid-cols-1 max-lg:gap-[48px]">
-					<div className="mx-auto max-w-[clamp(360px,40.3vw,580px)] text-right text-[#0E1A24]">
+					<div className="mx-auto max-w-[clamp(360px,40.3vw,580px)] text-center text-[#0E1A24]">
 						<h2
-							className="text-[clamp(32px,3.33vw,48px)] leading-[1] tracking-[0]"
+							className="text-[30px] sm:text-[32px] md:text-[34px] lg:text-[36px] leading-[1] tracking-[0]"
 							style={{
 								fontFamily: "BaskervilleLocal, Libre Baskerville, serif",
 								fontWeight: 600,
@@ -22,7 +22,7 @@ export default function Contact() {
 						</h2>
 
 						<p
-							className="mt-[clamp(8px,0.7vw,10px)] text-[clamp(20px,1.8vw,26px)] leading-[1] tracking-[0]"
+							className="mt-[clamp(8px,0.7vw,10px)] text-[18px] sm:text-[19px] lg:text-[20px] leading-[1.1] tracking-[0]"
 							style={{
 								fontFamily: "Hubballi, system-ui, sans-serif",
 								fontWeight: 400,
@@ -32,7 +32,7 @@ export default function Contact() {
 						</p>
 
 						<p
-							className="mt-[clamp(30px,3.6vw,52px)] text-[clamp(16px,1.48vw,22px)] leading-[1] tracking-[0]"
+							className="mt-[clamp(30px,3.6vw,52px)] text-[13.5px] sm:text-[14px] md:text-[14.5px] lg:text-[15px] leading-[1.6] sm:leading-[1.55] lg:leading-[1.5] tracking-[0]"
 							style={{
 								fontFamily: "BaskervilleLocal, Libre Baskerville, serif",
 								fontWeight: 400,
