@@ -4,6 +4,8 @@ import DotMorphPagination from "./DotMorphPagination";
 import italianImg from "../assets/experience/italian.webp";
 import ruedaIcon from "../assets/experience/rueda.png";
 
+import tuscan from "../assets/experience/2-tuscan-landscapes.jpg";
+import gastronomic from "../assets/experience/3-gastronomy-and-culture.jpg";
 type Slide = {
   title: string;
   description: string; // texto con saltos de línea
@@ -30,7 +32,7 @@ export default function ItalianExperience() {
           "Colinas, viñedos y pueblos medievales.\n" +
           "Un ritmo perfecto para disfrutar el camino\n" +
           "y la cultura a cada kilómetro.",
-        imageSrc: italianImg,
+        imageSrc: tuscan,
         iconSrc: ruedaIcon,
       },
       {
@@ -39,7 +41,7 @@ export default function ItalianExperience() {
           "Sabores locales, paradas con historia\n" +
           "y encuentros que vuelven cada día\n" +
           "una experiencia completa.",
-        imageSrc: italianImg,
+        imageSrc: gastronomic,
         iconSrc: ruedaIcon,
       },
     ],
@@ -189,15 +191,29 @@ export default function ItalianExperience() {
                   </div>
 
                   <DotMorphPagination
-                    total={total}
-                    active={active}
-                    onChange={setActive}
-                    dotSize={10}
-                    gap={12}
-                    pillHeight={10}
-                    backgroundColor="#F3F0E9"
-                    boldPill
-                  />
+  total={total}
+  active={active}
+  onChange={setActive}
+  dotSize={10}
+  gap={12}
+  pillHeight={10}
+
+  // ✅ aquí sí usamos el color del fondo porque NO es imagen
+  backgroundColor="#F3F0E9"
+
+  // ✅ negro (como tu diseño)
+  dotBorderColor="rgba(17, 24, 39, 0.45)"   // contorno dots (suave)
+  pillBorderColor="rgba(17, 24, 39, 1)"     // pill negro fuerte
+
+  // ✅ para que NO se vea el contorno del dot debajo del pill
+  hideActiveDotBorder={true}
+
+  // ✅ margen para que no quede pegado (opcional)
+  bottomOffset={0}
+
+  boldPill
+/>
+
                 </div>
               </div>
             </div>
