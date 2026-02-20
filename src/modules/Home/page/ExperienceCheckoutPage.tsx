@@ -22,7 +22,7 @@ export default function ExperienceCheckoutPage() {
     maximumFractionDigits: 2,
   })} MXN`;
 
-  const formSubmitEmail = "tu-correo@dominio.com";
+  const formSubmitEmail = "info@pedalprestige.com.mx";
   const formSubmitAction = `https://formsubmit.co/${formSubmitEmail}`;
   const formSubmitNext =
     typeof window !== "undefined"

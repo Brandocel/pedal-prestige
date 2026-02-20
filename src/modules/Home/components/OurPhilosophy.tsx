@@ -55,8 +55,8 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
 
           {/* Contenedor general */}
           <div className="mt-7 sm:mt-8 lg:mt-9 w-full max-w-[1040px]">
-            {/* ✅ BLOQUE: movido a la derecha (sin romper tailwind) */}
-            <div className="mx-auto w-full max-w-[900px] text-left text-[#F3F0E9] pl-[40px] md:pl-[160px] lg:pl-[50px]">
+            {/* ✅ BLOQUE: centrado sin justificación */}
+            <div className="mx-auto w-full max-w-[900px] text-center text-[#F3F0E9]">
               {/* Párrafo 1 */}
               <p
                 className="

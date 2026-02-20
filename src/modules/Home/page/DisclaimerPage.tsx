@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 export default function DisclaimerPage() {
   return (
-    <main className="w-full bg-[var(--prestige-ivory)]" id="disclaimer-page">
+    <main className=" bg-[var(--prestige-ivory)]" id="disclaimer-page">
       <NavbarAlt />
 
       <section className="w-full bg-[var(--prestige-ivory)]">
