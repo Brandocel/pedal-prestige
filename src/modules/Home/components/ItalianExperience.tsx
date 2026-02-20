@@ -29,18 +29,14 @@ export default function ItalianExperience() {
       {
         title: "Tuscan Landscapes",
         description:
-          "Colinas, viñedos y pueblos medievales.\n" +
-          "Un ritmo perfecto para disfrutar el camino\n" +
-          "y la cultura a cada kilómetro.",
+          "Colinas, viñedos y pueblos medievales. Un ritmo perfecto para disfrutar el camino y la cultura a cada kilómetro.",
         imageSrc: tuscan,
         iconSrc: ruedaIcon,
       },
       {
         title: "Gastronomy & Culture",
         description:
-          "Sabores locales, paradas con historia\n" +
-          "y encuentros que vuelven cada día\n" +
-          "una experiencia completa.",
+          "Sabores locales, paradas con historia y encuentros que vuelven cada día una experiencia completa.",
         imageSrc: gastronomic,
         iconSrc: ruedaIcon,
       },
