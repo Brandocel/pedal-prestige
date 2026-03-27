@@ -27,7 +27,7 @@ export default function DisclaimerPage() {
               className="mt-[clamp(22px,2.2vw,32px)] text-[clamp(14px,1.15vw,18px)] leading-[1.22]"
               style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}
             >
-              La presente declaración de <strong>Deslinde de Responsabilidad</strong> (en adelante, el "Disclaimer") rige el uso del sitio web de <strong>PEDAL PRESTIGE</strong> y la contratación de sus servicios de <em>travel experience</em> y turismo deportivo. Al acceder, navegar o realizar una reserva a través de nuestros canales, el usuario (en adelante, el "Usuario" o "Participante") reconoce haber leído, comprendido y aceptado las siguientes limitaciones de responsabilidad:
+              La presente declaración de <strong>Deslinde de Responsabilidad</strong> (en adelante, el "Disclaimer") rige el uso del sitio web de <strong>PEDAL PRESTIGE SAPI de CV.</strong> y la contratación de sus servicios de <em>travel experience</em> y turismo deportivo. Al acceder, navegar o realizar una reserva a través de nuestros canales, el usuario (en adelante, el "Usuario" o "Participante") reconoce haber leído, comprendido y aceptado las siguientes limitaciones de responsabilidad:
             </p>
 
             <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">

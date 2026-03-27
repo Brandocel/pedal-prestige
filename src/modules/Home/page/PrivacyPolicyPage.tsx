@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
               className="mt-[clamp(22px,2.2vw,32px)] text-[clamp(14px,1.15vw,18px)] leading-[1.22]"
               style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}
             >
-              <strong>PEDAL PRESTIGE</strong> (en adelante, el "Responsable"), comprometido con la protección de su privacidad y el cumplimiento de la normativa vigente en materia de protección de datos personales, pone a su disposición la presente Política de Privacidad. Este documento detalla la forma en que recabamos, utilizamos, almacenamos y protegemos la información personal de nuestros usuarios, prospectos y clientes (en adelante, el "Titular") a través de nuestro sitio web y servicios de travel experience.
+              <strong>PEDAL PRESTIGE SAPI de CV.</strong> (en adelante, el "Responsable"), comprometido con la protección de su privacidad y el cumplimiento de la normativa vigente en materia de protección de datos personales, pone a su disposición la presente Política de Privacidad. Este documento detalla la forma en que recabamos, utilizamos, almacenamos y protegemos la información personal de nuestros usuarios, prospectos y clientes (en adelante, el "Titular") a través de nuestro sitio web y servicios de travel experience.
             </p>
 
             <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
                 1. IDENTIDAD Y DOMICILIO DEL RESPONSABLE
               </h2>
               <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                El responsable del tratamiento de los datos personales recabados es <strong>PEDAL PRESTIGE</strong>, quien decide sobre el tratamiento de los mismos para la gestión de servicios turísticos deportivos y experiencias de viaje a Italia.
+                El responsable del tratamiento de los datos personales recabados es <strong>PEDAL PRESTIGE SAPI de CV.</strong>, quien decide sobre el tratamiento de los mismos para la gestión de servicios turísticos deportivos y experiencias de viaje a Italia.
               </p>
             </article>
 

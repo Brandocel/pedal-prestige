@@ -20,14 +20,14 @@ export default function TermsAndConditionsPage() {
               className="mt-[clamp(24px,2.5vw,36px)] text-[clamp(14px,1.15vw,18px)] leading-[1.22]"
               style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}
             >
-              Última actualización:&nbsp;16 de febrero de 2026.
+              Última actualización:&nbsp;26 de marzo de 2026.
             </p>
 
             <p
               className="mt-[clamp(22px,2.2vw,32px)] text-[clamp(14px,1.15vw,18px)] leading-[1.22]"
               style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}
             >
-              Los presentes Términos y Condiciones (en adelante, los "Términos") constituyen un acuerdo legal vinculante entre <strong>PEDAL PRESTIGE</strong> (en adelante, el "Organizador" o la "Empresa") y la persona física o jurídica que contrata los servicios (en adelante, el "Cliente" o el "Viajero"). La adquisición de cualquier paquete turístico, experiencia de ciclismo o servicio relacionado implica la lectura, comprensión y aceptación incondicional de las siguientes cláusulas:
+              Los presentes Términos y Condiciones (en adelante, los "Términos") constituyen un acuerdo legal vinculante entre <strong>PEDAL PRESTIGE SAPI de CV.</strong> (en adelante, el "Organizador" o la "Empresa") y la persona física o jurídica que contrata los servicios (en adelante, el "Cliente" o el "Viajero"). La adquisición de cualquier paquete turístico, experiencia de ciclismo o servicio relacionado implica la lectura, comprensión y aceptación incondicional de las siguientes cláusulas:
             </p>
 
             <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
@@ -35,90 +35,33 @@ export default function TermsAndConditionsPage() {
                 className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
                 style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
               >
-                1. ACEPTACIÓN DE CONDICIONES Y NATURALEZA DEL SERVICIO
+                1. Aceptación de términos
               </h2>
               <div className="space-y-[12px]">
                 <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>1.1. Perfeccionamiento del Contrato:</strong> Al efectuar una reserva con el Organizador, el Cliente acepta expresamente someterse a los presentes Términos. Se entiende que el pago del depósito de reserva constituye la prueba fehaciente de la aceptación total de estas condiciones.
+                  Al realizar el pago del depósito, el participante acepta los presentes Términos y Condiciones y reconoce que la participación en el viaje implica la aceptación de los riesgos inherentes a actividades de ciclismo y viajes internacionales.
                 </p>
                 <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>1.2. Reconocimiento de Riesgo:</strong> El Cliente reconoce y acepta que las experiencias de "cycling travel" (viajes de ciclismo) involucran actividades físicas exigentes y riesgos inherentes, incluyendo, pero no limitándose a: caídas, colisiones, tráfico vehicular, condiciones climáticas adversas y fatiga física.
+                  Previo al inicio del viaje, todos los participantes deberán completar y firmar los formularios requeridos por Pedal Prestige, incluyendo carta de liberación de responsabilidad, ficha médica y cualquier otro documento necesario para la correcta operación de la experiencia.
                 </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>1.3. Requisitos de Participación:</strong> Para la participación efectiva en el viaje, es condición sine qua non que el Cliente:
-                </p>
+              </div>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                2. Reserva y pagos
+              </h2>
+              <div className="space-y-[12px]">
                 <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <li>Firme el documento de "Liberación y Exención de Responsabilidad Civil".</li>
-                  <li>Acepte íntegramente los presentes Términos.</li>
-                  <li>Realice el pago del depósito correspondiente en los plazos estipulados.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                2. POLÍTICA DE RESERVAS Y RÉGIMEN DE PAGOS
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>2.1. Depósito de Confirmación:</strong> Para garantizar la reserva de una plaza, el Cliente deberá abonar un depósito por persona. Este monto tiene carácter no reembolsable y se considera una contraprestación por los servicios administrativos, logísticos y de planificación previa ejecutados por el Organizador desde el momento de la reserva. Dicho monto será deducido del costo total del viaje.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>2.2. Liquidación Total:</strong> El pago del saldo restante del viaje deberá estar cubierto en su totalidad antes de la fecha de salida programada, recomendándose un plazo de noventa (90) días previos. Reservas de Última Hora: Para reservas efectuadas dentro del periodo de 90 días previos a la salida, el pago total será exigible de manera inmediata al momento de la confirmación.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>2.3. Incumplimiento de Pago:</strong> La falta de recepción del pago final en los plazos establecidos facultará a Pedal Prestige para cancelar la reserva unilateralmente, reteniendo el depósito en concepto de penalización por incumplimiento de contrato.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>2.4. Medios de Pago:</strong> Se aceptarán transferencias bancarias, tarjetas de crédito/débito y otros métodos digitales expresamente autorizados por la Empresa. Queda estrictamente prohibido el pago en efectivo para reservas de carácter internacional, en cumplimiento con las normativas de prevención de lavado de activos.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                3. PRECIOS Y TARIFAS
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>3.1. Base de Cotización:</strong> Todos los precios publicados son por persona y están calculados en base a ocupación doble, salvo que se especifique lo contrario. Los costos están sujetos a variaciones dependientes de la categoría hotelera, complejidad de la ruta y el número final de integrantes del grupo.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>3.2. Suplemento Individual:</strong> Aquellos viajeros que requieran habitación privada deberán abonar el "Suplemento Individual" (Single Supplement) vigente al momento de la reserva.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>3.3. Inexistencia de Reembolsos Parciales:</strong> No se realizarán ajustes, descuentos ni reembolsos por servicios no utilizados voluntariamente por el Cliente, incluyendo: llegadas tardías, salidas anticipadas o la decisión de no participar en determinadas rodadas o actividades programadas.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                4. POLÍTICA DE CANCELACIÓN POR PARTE DEL CLIENTE
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>4.1. Naturaleza de los Servicios:</strong> Dado que los viajes de ciclismo requieren la contratación anticipada de proveedores, hoteles y transporte, las políticas de cancelación son estrictas e inamovibles.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>4.2. Esquema de Penalización:</strong> En caso de desistimiento por parte del Cliente, se aplicarán los siguientes cargos o créditos según la antelación de la notificación escrita:
-                </p>
-                <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <li><strong>Más de 90 días antes de la salida:</strong> Se otorgará un Crédito de Viaje por el monto abonado (menos gastos administrativos, si aplicaren).</li>
-                  <li><strong>Entre 60 y 90 días antes de la salida:</strong> Reembolso parcial sujeto a las deducciones por gastos incurridos.</li>
-                  <li><strong>Menos de 60 días antes de la salida:</strong> Tarifa 100% no reembolsable. El Cliente perderá la totalidad de los montos abonados.</li>
+                  <li>Para confirmar la reserva, se requiere un depósito del 30% del valor total del viaje.</li>
+                  <li>El saldo restante deberá liquidarse 45 días antes de la fecha de salida.</li>
+                  <li>En caso de no recibir el pago final en la fecha indicada, Pedal Prestige se reserva el derecho de cancelar la reserva sin reembolso del depósito.</li>
                 </ul>
                 <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>4.3. Condiciones del Crédito de Viaje:</strong> Los créditos otorgados son personales e intransferibles y deberán ser utilizados en un nuevo servicio de Pedal Prestige dentro de un plazo perentorio de doce (12) meses contados a partir de la fecha de cancelación original.
+                  Todos los precios están expresados en euros (EUR) y por persona, en base a ocupación doble, salvo indicación contraria.
                 </p>
               </div>
             </article>
@@ -128,17 +71,39 @@ export default function TermsAndConditionsPage() {
                 className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
                 style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
               >
-                5. MODIFICACIONES Y CAMBIOS DE FECHA
+                3. Política de cancelación
               </h2>
               <div className="space-y-[12px]">
                 <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>5.1. Solicitud de Cambios:</strong> Cualquier solicitud de cambio de fecha o destino estará sujeta a disponibilidad y a la aprobación discrecional de Pedal Prestige.
+                  Debido a la naturaleza logística del viaje, la planificación anticipada y los compromisos adquiridos con proveedores, se aplican las siguientes condiciones:
+                </p>
+                <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                  <li>El depósito del 30% es no reembolsable en ningún caso.</li>
+                  <li>Cancelaciones con más de 120 días previos a la salida: reembolso del 70% del total pagado (excluyendo depósito) o, alternativamente, opción de crédito para un futuro viaje.</li>
+                  <li>Cancelaciones entre 119 y 91 días previos a la salida: reembolso del 50% del total pagado (excluyendo depósito) o crédito aplicable a un futuro viaje.</li>
+                  <li>Cancelaciones con 90 días o menos previos a la salida: no hay reembolso. En estos casos, Pedal Prestige podrá, a su discreción, ofrecer un crédito no reembolsable para utilizar en futuras experiencias.</li>
+                </ul>
+                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                  Condiciones adicionales:
+                </p>
+                <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                  <li>Toda cancelación deberá solicitarse por escrito y será efectiva en la fecha de recepción.</li>
+                  <li>
+                    Los créditos otorgados:
+                    <ul className="list-disc space-y-[4px] pl-[24px]">
+                      <li>No son reembolsables ni transferibles.</li>
+                      <li>Tendrán una vigencia de 12 meses a partir de la fecha original del viaje.</li>
+                      <li>No podrán utilizarse como depósito inicial para una nueva reserva.</li>
+                    </ul>
+                  </li>
+                  <li>Los servicios adicionales contratados (upgrades, experiencias privadas, suplementos, etc.) pueden ser no reembolsables desde el momento de su contratación.</li>
+                  <li>No habrá reembolsos por llegadas tardías, salidas anticipadas o servicios no utilizados durante el viaje.</li>
+                </ul>
+                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                  Pedal Prestige realiza compromisos financieros con proveedores con antelación, por lo que el participante acepta estas condiciones al momento de reservar.
                 </p>
                 <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>5.2. Costos Asociados:</strong> Dichos cambios podrán generar cargos administrativos adicionales y el Cliente deberá cubrir cualquier diferencia tarifaria vigente al momento del cambio.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>5.3. Limitación:</strong> Se permite únicamente un (1) cambio por reserva. Cambios subsiguientes serán tratados como una cancelación y nueva reserva.
+                  Se recomienda ampliamente la contratación de un seguro de cancelación de viaje.
                 </p>
               </div>
             </article>
@@ -148,19 +113,13 @@ export default function TermsAndConditionsPage() {
                 className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
                 style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
               >
-                6. MODIFICACIONES O CANCELACIONES POR PARTE DEL ORGANIZADOR
+                4. Cambios por parte del participante
               </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>6.1. Derecho de Modificación:</strong> Pedal Prestige se reserva el derecho de alterar rutas, itinerarios, alojamientos, horarios y actividades sin previo aviso cuando circunstancias de fuerza mayor, clima, seguridad, logística o causas ajenas a la empresa lo justifiquen.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>6.2. Fuerza Mayor:</strong> En el supuesto de que el viaje deba cancelarse en su totalidad por causas de fuerza mayor (pandemias, disturbios civiles, desastres naturales, etc.), la Empresa ofrecerá un Crédito de Viaje para futuras reservas. No procederán reembolsos en efectivo bajo estas circunstancias.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>6.3. Limitación de Responsabilidad por Terceros:</strong> Pedal Prestige no será responsable, bajo ninguna circunstancia, por los costos incurridos por el Cliente en relación con vuelos aéreos, alojamientos externos al tour, o gastos personales adicionales derivados de dichas modificaciones o cancelaciones.
-                </p>
-              </div>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Los cambios de fecha o de tour están sujetos a disponibilidad y aprobación.</li>
+                <li>Podrán aplicarse cargos administrativos y diferencias tarifarias.</li>
+                <li>No se garantizan modificaciones dentro de los 45 días previos al viaje.</li>
+              </ul>
             </article>
 
             <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
@@ -168,121 +127,17 @@ export default function TermsAndConditionsPage() {
                 className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
                 style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
               >
-                7. DOCUMENTACIÓN MIGRATORIA Y LEGAL
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>7.1. Responsabilidad Exclusiva:</strong> Es responsabilidad exclusiva e indelegable del Cliente contar con pasaporte vigente (con la validez requerida por las autoridades italianas/europeas), visas, permisos sanitarios y seguros personales necesarios.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>7.2. Consecuencias:</strong> La imposibilidad de realizar el viaje por falta o irregularidad en la documentación será considerada una "Cancelación Voluntaria" por parte del Cliente, aplicándose las penalizaciones descritas en la Cláusula 4.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                8. DECLARACIÓN DE APTITUD FÍSICA Y PERFIL DEL VIAJERO
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>8.1. Garantía de Aptitud:</strong> Al reservar, el Cliente declara y garantiza que posee la condición física y técnica necesaria para completar las rutas estipuladas y que su estado de salud es compatible con la exigencia del ciclismo en carretera.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>8.2. Obligación de Informar:</strong> El Cliente está obligado a notificar a la Empresa sobre cualquier condición médica, alergia o restricción dietética relevante antes del viaje.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>8.3. Asunción de Competencia:</strong> El Cliente asume la total responsabilidad de su capacidad para participar en las actividades, eximiendo a Pedal Prestige de cualquier perjuicio derivado de su falta de condición física.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                9. CÓDIGO DE CONDUCTA Y SEGURIDAD EN RUTA
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>9.1. Normas de Convivencia:</strong> El Cliente se compromete a mantener una conducta respetuosa hacia el personal de Pedal Prestige, otros participantes, y las comunidades locales, acatando las leyes y costumbres vigentes en Italia.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>9.2. Seguridad Vial:</strong> Es obligatorio seguir estrictamente las indicaciones de los guías. El uso de casco homologado es obligatorio en todo momento durante las rodadas. Se prohíbe estrictamente el uso de audífonos o dispositivos que aíslen al ciclista del entorno mientras conduce.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>9.3. Consumo de Sustancias:</strong> El consumo de alcohol deberá realizarse con moderación y exclusivamente fuera de los horarios de actividad física. Queda prohibido el consumo de sustancias ilegales.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>9.4. Derecho de Admisión y Permanencia:</strong> Pedal Prestige se reserva el derecho irrevocable de retirar del viaje a cualquier participante cuyo comportamiento ponga en peligro la seguridad, armonía o bienestar del grupo, sin que ello genere derecho a reembolso alguno ni compensación por gastos de retorno.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                10. LIMITACIÓN DE RESPONSABILIDAD CIVIL
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>10.1. Exención:</strong> Pedal Prestige actúa como intermediario y organizador. La Empresa no será responsable por lesiones corporales, daños materiales, accidentes derivados de la práctica del ciclismo, condiciones climáticas, tráfico, fallas mecánicas de equipos propios o rentados, ni por actos u omisiones de terceros proveedores.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>10.2. Documento Vinculante:</strong> La firma del formulario de "Liberación de Responsabilidad" es un requisito previo indispensable para el inicio de las actividades. La negativa a firmarlo impedirá la participación del Cliente sin derecho a reembolso.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                11. EQUIPAJE Y BICICLETAS
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>11.1. Custodia:</strong> El Cliente es el único responsable de la custodia, integridad y seguridad de su equipaje y efectos personales durante todo el viaje.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>11.2. Equipamiento Deportivo:</strong> Ya sea que el Cliente transporte su propia bicicleta o alquile una en el destino, será responsable del cuidado y uso adecuado de la misma. Pedal Prestige no asume responsabilidad por daños, pérdidas, robos o averías sufridas por el equipo deportivo durante el transporte o la ejecución del viaje.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                12. SALUD, SEGUROS Y EMERGENCIAS
-              </h2>
-              <div className="space-y-[12px]">
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>12.1. Seguro Obligatorio:</strong> El Cliente declara contar con una póliza de seguro médico internacional vigente con cobertura amplia para actividades deportivas y repatriación sanitaria.
-                </p>
-                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>12.2. Acceso Médico:</strong> El Cliente reconoce y acepta que ciertas rutas pueden transcurrir por zonas remotas donde el acceso a servicios médicos de urgencia puede ser limitado o demorado, asumiendo los riesgos asociados a dicha situación.
-                </p>
-              </div>
-            </article>
-
-            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
-              <h2
-                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
-                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-              >
-                13. DERECHOS DE IMAGEN Y PROPIEDAD INTELECTUAL
+                5. Cambios por parte de Pedal Prestige
               </h2>
               <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                <strong>13.1. Autorización:</strong> El Cliente otorga a Pedal Prestige una licencia gratuita, mundial y perpetua para utilizar, reproducir y publicar fotografías, videos o testimonios tomados durante el viaje en los que aparezca su imagen, con fines promocionales, publicitarios y de marketing en cualquier medio o formato, renunciando a cualquier compensación económica o derecho de inspección previa.
+                Pedal Prestige se reserva el derecho de:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Modificar itinerarios, rutas, hospedaje o actividades por razones operativas, climáticas o de seguridad.</li>
+                <li>Ajustar horarios o experiencias sin previo aviso cuando sea necesario para la correcta ejecución del viaje.</li>
+              </ul>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                En caso de cambios significativos, se procurará mantener el estándar y calidad de la experiencia.
               </p>
             </article>
 
@@ -291,24 +146,191 @@ export default function TermsAndConditionsPage() {
                 className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
                 style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
               >
-                14. DINÁMICA DE GRUPO
+                6. Fuerza mayor
               </h2>
               <div className="space-y-[12px]">
                 <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>14.1. Adaptabilidad:</strong> Los viajes de Pedal Prestige son experiencias colectivas. El Cliente acepta la necesidad de flexibilidad y adaptación a las circunstancias cambiantes del viaje.
+                  Pedal Prestige no será responsable por cancelaciones, modificaciones o interrupciones causadas por situaciones fuera de su control, incluyendo pero no limitado a:
                 </p>
+                <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                  <li>Condiciones climáticas.</li>
+                  <li>Pandemias o restricciones sanitarias.</li>
+                  <li>Conflictos sociales o políticos.</li>
+                  <li>Cancelaciones de proveedores.</li>
+                </ul>
                 <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
-                  <strong>14.2. Autoridad del Guía:</strong> El Cliente acepta respetar y acatar las decisiones tomadas por el guía líder o representante de la Empresa en beneficio de la seguridad y el buen desarrollo del viaje para la totalidad del grupo.
+                  En estos casos, se podrá ofrecer reprogramación o crédito para futuros viajes, sin garantía de reembolso.
                 </p>
               </div>
             </article>
 
-            <p
-              className="mt-[clamp(28px,2.9vw,42px)] text-[clamp(14px,1.15vw,18px)] leading-[1.22]"
-              style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
-            >
-              Al hacer clic en "Acepto", o al efectuar el pago del depósito, usted certifica que ha leído, entendido y aceptado todos los términos y condiciones anteriormente expuestos.
-            </p>
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                7. Responsabilidad y riesgo
+              </h2>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                El participante reconoce que:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>El ciclismo de ruta implica riesgos físicos inherentes, incluyendo caídas, colisiones y condiciones variables del terreno.</li>
+                <li>Participa bajo su propia responsabilidad y declara encontrarse en condiciones físicas adecuadas.</li>
+              </ul>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                Pedal Prestige no será responsable por lesiones personales, accidentes o incidentes derivados de la participación en las actividades del viaje.
+              </p>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                8. Seguro de viaje
+              </h2>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                Es obligatorio contar con:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Seguro médico internacional.</li>
+                <li>Seguro de viaje con cobertura para actividades deportivas.</li>
+              </ul>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                Pedal Prestige no cubre gastos médicos, hospitalarios ni farmacéuticos bajo ninguna circunstancia.
+              </p>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                9. Logística y operación
+              </h2>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Los horarios de llegada y salida deberán respetarse conforme al itinerario.</li>
+                <li>Traslados fuera de los horarios establecidos podrán generar costos adicionales.</li>
+                <li>El equipaje será transportado durante el viaje; sin embargo, Pedal Prestige no se hace responsable por pérdidas, retrasos o daños.</li>
+              </ul>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                En caso de utilizar bicicleta propia:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>El participante será responsable de su transporte, armado, mantenimiento y seguridad.</li>
+              </ul>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                10. Conducta del participante
+              </h2>
+              <div className="space-y-[12px]">
+                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                  Se espera que todos los participantes mantengan una conducta respetuosa hacia el grupo, el equipo de trabajo y las comunidades locales.
+                </p>
+                <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                  Pedal Prestige se reserva el derecho de retirar a cualquier participante que ponga en riesgo la seguridad del grupo o afecte la experiencia, sin derecho a reembolso.
+                </p>
+              </div>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                11. Requisitos del participante
+              </h2>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                El participante declara que:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Cuenta con la condición física adecuada para el nivel del viaje.</li>
+                <li>Posee la documentación necesaria para viajar.</li>
+                <li>Cumplirá con las normas de seguridad indicadas.</li>
+              </ul>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                12. No incluye
+              </h2>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                El viaje no incluye:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Vuelos internacionales.</li>
+                <li>Seguro de viaje.</li>
+                <li>Traslados fuera del itinerario.</li>
+                <li>Bebidas adicionales.</li>
+                <li>Propinas.</li>
+                <li>Gastos personales.</li>
+                <li>Equipo personal de ciclismo.</li>
+              </ul>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                13. Uso de imagen
+              </h2>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                El participante autoriza a Pedal Prestige a utilizar material fotográfico y audiovisual generado durante el viaje con fines promocionales, sin compensación adicional.
+              </p>
+            </article>
+
+            <article className="mt-[clamp(22px,2.2vw,32px)] space-y-[10px]">
+              <h2
+                className="text-[clamp(20px,1.66vw,28px)] leading-[1.08]"
+                style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 700 }}
+              >
+                14. Responsabilidades del participante y exención de responsabilidad
+              </h2>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                El participante reconoce y acepta que es su responsabilidad:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Completar y firmar todos los formularios requeridos por Pedal Prestige.</li>
+                <li>Proporcionar información verídica sobre su estado de salud.</li>
+                <li>Informar previamente cualquier alergia, enfermedad o condición relevante.</li>
+                <li>Contar con la preparación física adecuada.</li>
+              </ul>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                Pedal Prestige no será responsable por:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>Pérdida o retraso de equipaje personal o deportivo.</li>
+                <li>Retrasos o cancelaciones de vuelos.</li>
+                <li>Cambios de itinerario por razones logísticas o climáticas.</li>
+                <li>Accidentes o incidentes durante la actividad.</li>
+                <li>Gastos médicos.</li>
+                <li>Daños materiales o pérdidas económicas.</li>
+                <li>Consecuencias derivadas de omitir información médica.</li>
+              </ul>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                El participante entiende que:
+              </p>
+              <ul className="list-disc space-y-[4px] pl-[24px] text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                <li>La contratación de seguro es obligatoria.</li>
+                <li>Participa bajo su propio riesgo.</li>
+              </ul>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                Pedal Prestige actúa como coordinador de servicios y no es responsable por terceros.
+              </p>
+              <p className="text-[clamp(14px,1.15vw,18px)] leading-[1.22]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif" }}>
+                Asimismo, el participante libera expresamente a Pedal Prestige de cualquier reclamación legal derivada de su participación en el viaje.
+              </p>
+            </article>
           </div>
         </div>
       </section>
