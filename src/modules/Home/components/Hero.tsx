@@ -3,8 +3,10 @@ type HeroProps = {
 };
 
 import Header from "../../../components/common/Header/components/Header";
+import { useI18n } from "../../../i18n/i18n";
 
 export default function Hero({ backgroundSrc }: HeroProps) {
+  const { t } = useI18n();
   return (
     <section className="w-full bg-ivory">
       <div className="relative w-full overflow-hidden">
@@ -65,9 +67,9 @@ export default function Hero({ backgroundSrc }: HeroProps) {
                     fontWeight: 700,
                   }}
                 >
-                  Where every road
+                  {t("hero.titleLine1")}
                   <br />
-                  becomes an experience
+                  {t("hero.titleLine2")}
                 </h1>
 
                 <p
@@ -91,7 +93,7 @@ export default function Hero({ backgroundSrc }: HeroProps) {
                     textAlign: "justify",
                   }}
                 >
-                  Vive la experiencia de rodar en Italia por rutas icónicas, disfrutando de su gastronomía, sus paisajes y cultura. Vive una de las aventuras más memorables sobre dos ruedas con nosotros.
+                  {t("hero.text")}
                 </p>
               </div>
 
@@ -137,7 +139,7 @@ export default function Hero({ backgroundSrc }: HeroProps) {
                   "
                   style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
                 >
-                  DISCOVER THE JOURNEY
+                  {t("hero.cta")}
                 </button>
               </div>
 

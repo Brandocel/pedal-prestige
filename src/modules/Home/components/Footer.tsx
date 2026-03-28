@@ -1,6 +1,8 @@
 import logoGroup from "../assets/foter/Group.svg";
+import { useI18n } from "../../../i18n/i18n";
 
 export default function Footer() {
+	const { t } = useI18n();
 	return (
 		<footer className="w-full">
 			<div className="grid min-h-[clamp(420px,32.92vw,474px)] w-full grid-cols-[34.85%_1fr] max-lg:grid-cols-1">
@@ -29,7 +31,7 @@ export default function Footer() {
 									fontWeight: 600,
 								}}
 							>
-								Contact us
+								{t("footer.contactUs")}
 							</h3>
 
 							<div
@@ -62,9 +64,9 @@ export default function Footer() {
 							aria-label="Footer legal"
 						>
 							<ul>
-								<li><a href="/terms">Terms & conditions</a></li>
-								<li><a href="/privacy">Privacy policy</a></li>
-								<li><a href="/disclaimer">Disclaimer</a></li>
+								<li><a href="/terms">{t("footer.terms")}</a></li>
+								<li><a href="/privacy">{t("footer.privacy")}</a></li>
+								<li><a href="/disclaimer">{t("footer.disclaimer")}</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -73,7 +75,7 @@ export default function Footer() {
 						className="mt-[clamp(46px,7vw,101px)] text-[clamp(12px,0.972vw,14px)] leading-[1.2] tracking-[0.02em] text-[#9DAAB7]"
 						style={{ fontFamily: "Hubballi, system-ui, sans-serif", fontWeight: 400 }}
 					>
-						Pedal Prestige © All Rights Reserved
+						{t("footer.rights")}
 					</p>
 				</div>
 			</div>

@@ -1,4 +1,6 @@
 import logo from "../assets/logo.webp";
+import LanguageToggle from "../../LanguageToggle";
+import { useI18n } from "../../../../i18n/i18n";
 
 type HeaderVariant = "home" | "compact";
 type HeaderPosition = "overlay" | "sticky";
@@ -9,21 +11,22 @@ type HeaderProps = {
 };
 
 type NavItem =
-  | { label: string; type: "hash"; href: `#${string}` }
+  | { labelKey: string; type: "hash"; href: `#${string}` }
   | { label: string; type: "route"; href: `/${string}` };
 
 const NAV: NavItem[] = [
-  { label: "Home", type: "hash", href: "#home" },
-  { label: "About", type: "hash", href: "#about" },
+  { labelKey: "nav.home", type: "hash", href: "#home" },
+  { labelKey: "nav.about", type: "hash", href: "#about" },
   { label: "Experience", type: "route", href: "/experience" }, // ✅ otra página
-  { label: "Discover", type: "hash", href: "#discover" },      // ✅ scroll en home
-  { label: "Contact", type: "hash", href: "#contact" },
+  { labelKey: "nav.discover", type: "hash", href: "#discover" },      // ✅ scroll en home
+  { labelKey: "nav.contact", type: "hash", href: "#contact" },
 ];
 
 export default function Header({
   variant = "home",
   position = "sticky",
 }: HeaderProps) {
+  const { t } = useI18n();
   const isHome = variant === "home";
 
   const wrapperClass = isHome ? "bg-transparent" : "backdrop-blur-[10px] bg-black/35";
@@ -57,7 +60,7 @@ export default function Header({
               type="button"
               onClick={() => scrollToHash("#home")}
               className="flex items-center"
-              aria-label="Go to Home"
+              aria-label={t("nav.goHome")}
             >
               <img
                 src={logo}
@@ -73,13 +76,13 @@ export default function Header({
                 if (item.type === "hash") {
                   return (
                     <button
-                      key={item.label}
+                      key={item.labelKey}
                       type="button"
                       onClick={() => scrollToHash(item.href)}
                       className="text-white/90 hover:text-white text-[20px] leading-[1] transition"
                       style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
                     >
-                      {item.label}
+                      {t(item.labelKey)}
                     </button>
                   );
                 }
@@ -92,10 +95,11 @@ export default function Header({
                     className="text-white/90 hover:text-white text-[20px] leading-[1] transition"
                     style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
                   >
-                    {item.label}
+                    {t("nav.experience")}
                   </a>
                 );
               })}
+              <LanguageToggle />
             </nav>
           </div>
         </div>

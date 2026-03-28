@@ -6,19 +6,39 @@ type Props = {
     subtitle?: string;
     bullets?: string[];
   };
+
+  import { useI18n } from "../../../i18n/i18n";
   
   export default function WhoItsForSection({
     imageFront,
     imageBack,
-    title = "Who it’s for",
-    subtitle = "Designed for those who value the journey.",
-    bullets = [
-      "Ciclistas recreativos y avanzados",
-      "Viajeros con sensibilidad cultural y gastronómica",
-      "Personas que buscan experiencias auténticas, no turismo ordinario",
-      "Quienes prefieren calidad, diseño y curaduría sobre cantidad",
-    ],
+    title,
+    subtitle,
+    bullets,
   }: Props) {
+    const { language } = useI18n();
+    const resolvedTitle = title ?? (language === "es" ? "Para quien es" : "Who it's for");
+    const resolvedSubtitle =
+      subtitle ??
+      (language === "es"
+        ? "Diseñado para quienes valoran el viaje."
+        : "Designed for those who value the journey.");
+    const resolvedBullets =
+      bullets ??
+      (language === "es"
+        ? [
+            "Ciclistas recreativos y avanzados",
+            "Viajeros con sensibilidad cultural y gastronómica",
+            "Personas que buscan experiencias auténticas, no turismo ordinario",
+            "Quienes prefieren calidad, diseño y curaduría sobre cantidad",
+          ]
+        : [
+            "Recreational and advanced cyclists",
+            "Travelers with cultural and gastronomic sensitivity",
+            "People seeking authentic experiences, not ordinary tourism",
+            "Those who prefer quality, design and curation over quantity",
+          ]);
+
     return (
       <section className="w-full bg-[#F3F0E9]">
         <div className="mx-auto max-w-[1440px] px-[80px] py-[120px] max-lg:px-[40px] max-sm:px-[20px]">
@@ -58,7 +78,7 @@ type Props = {
                     lineHeight: "100%",
                   }}
                 >
-                  {title}
+                  {resolvedTitle}
                 </h3>
   
                 <p
@@ -70,7 +90,7 @@ type Props = {
                     lineHeight: "100%",
                   }}
                 >
-                  {subtitle}
+                  {resolvedSubtitle}
                 </p>
   
                 <ul
@@ -83,7 +103,7 @@ type Props = {
                     paddingLeft: 18,
                   }}
                 >
-                  {bullets.map((b, i) => (
+                  {resolvedBullets.map((b, i) => (
                     <li key={i} style={{ listStyleType: "disc" }}>
                       {b}
                     </li>
@@ -115,7 +135,7 @@ type Props = {
                 >
                   <img
                     src={imageBack}
-                    alt="background"
+                    alt={language === "es" ? "fondo" : "background"}
                     draggable={false}
                     className="h-full w-full select-none"
                     style={{
@@ -140,7 +160,7 @@ type Props = {
                 >
                   <img
                     src={imageFront}
-                    alt="front"
+                    alt={language === "es" ? "frontal" : "front"}
                     draggable={false}
                     className="h-full w-full select-none"
                     style={{
@@ -159,7 +179,7 @@ type Props = {
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16 / 10" }}>
                   <img
                     src={imageBack}
-                    alt="background"
+                    alt={language === "es" ? "fondo" : "background"}
                     className="absolute inset-0 h-full w-full object-cover"
                     draggable={false}
                   />
@@ -168,7 +188,7 @@ type Props = {
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16 / 10" }}>
                   <img
                     src={imageFront}
-                    alt="front"
+                    alt={language === "es" ? "frontal" : "front"}
                     className="absolute inset-0 h-full w-full object-cover"
                     draggable={false}
                   />
@@ -187,7 +207,7 @@ type Props = {
                       lineHeight: "100%",
                     }}
                   >
-                    {title}
+                    {resolvedTitle}
                   </h3>
   
                   <p
@@ -199,7 +219,7 @@ type Props = {
                       lineHeight: "100%",
                     }}
                   >
-                    {subtitle}
+                    {resolvedSubtitle}
                   </p>
   
                   <ul
@@ -212,7 +232,7 @@ type Props = {
                       paddingLeft: 18,
                     }}
                   >
-                    {bullets.map((b, i) => (
+                    {resolvedBullets.map((b, i) => (
                       <li key={i} style={{ listStyleType: "disc" }}>
                         {b}
                       </li>

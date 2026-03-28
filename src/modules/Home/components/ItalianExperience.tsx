@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import DotMorphPagination from "./DotMorphPagination";
+import { useI18n } from "../../../i18n/i18n";
 
 import italianImg from "../assets/experience/italian.webp";
 import ruedaIcon from "../assets/experience/rueda.png";
@@ -14,34 +15,62 @@ type Slide = {
 };
 
 export default function ItalianExperience() {
+  const { language } = useI18n();
+
   const slides: Slide[] = useMemo(
-    () => [
-      {
-        title: "Iconic Cycling Routes",
-        // ✅ 3 líneas EXACTAS como tu imagen
-        description:
-          "Rodamos por algunas de las rutas más emblemáticas de\n" +
-          "Italia, seleccionadas por su belleza, su historia y su equilibrio\n" +
-          "entre reto y experiencia.",
-        imageSrc: italianImg,
-        iconSrc: ruedaIcon,
-      },
-      {
-        title: "Tuscan Landscapes",
-        description:
-          "Colinas, viñedos y pueblos medievales. Un ritmo perfecto para disfrutar el camino y la cultura a cada kilómetro.",
-        imageSrc: tuscan,
-        iconSrc: ruedaIcon,
-      },
-      {
-        title: "Gastronomy & Culture",
-        description:
-          "Sabores locales, paradas con historia y encuentros que vuelven cada día una experiencia completa.",
-        imageSrc: gastronomic,
-        iconSrc: ruedaIcon,
-      },
-    ],
-    []
+    () =>
+      language === "es"
+        ? [
+            {
+              title: "Rutas ciclistas iconicas",
+              description:
+                "Rodamos por algunas de las rutas mas emblematicas de\n" +
+                "Italia, seleccionadas por su belleza, su historia y su equilibrio\n" +
+                "entre reto y experiencia.",
+              imageSrc: italianImg,
+              iconSrc: ruedaIcon,
+            },
+            {
+              title: "Paisajes toscanos",
+              description:
+                "Colinas, vinedos y pueblos medievales. Un ritmo perfecto para disfrutar el camino y la cultura en cada kilometro.",
+              imageSrc: tuscan,
+              iconSrc: ruedaIcon,
+            },
+            {
+              title: "Gastronomia y cultura",
+              description:
+                "Sabores locales, paradas con historia y encuentros que convierten cada dia en una experiencia completa.",
+              imageSrc: gastronomic,
+              iconSrc: ruedaIcon,
+            },
+          ]
+        : [
+            {
+              title: "Iconic Cycling Routes",
+              description:
+                "We ride through some of Italy's most iconic routes, selected for\n" +
+                "their beauty, heritage and the perfect balance between challenge\n" +
+                "and enjoyment.",
+              imageSrc: italianImg,
+              iconSrc: ruedaIcon,
+            },
+            {
+              title: "Tuscan Landscapes",
+              description:
+                "Rolling hills, vineyards and medieval villages. A perfect rhythm to enjoy the road and local culture every kilometer.",
+              imageSrc: tuscan,
+              iconSrc: ruedaIcon,
+            },
+            {
+              title: "Gastronomy & Culture",
+              description:
+                "Local flavors, historical stops and authentic encounters that turn each day into a complete journey.",
+              imageSrc: gastronomic,
+              iconSrc: ruedaIcon,
+            },
+          ],
+    [language]
   );
 
   const [active, setActive] = useState(0);
@@ -66,14 +95,14 @@ export default function ItalianExperience() {
               fontWeight: 700,
             }}
           >
-            The italian experience
+            {language === "es" ? "La experiencia italiana" : "The Italian experience"}
           </h2>
 
           <p
             className="mt-[6px] text-[18px] leading-[1.2] opacity-80 antialiased"
             style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
           >
-            Beyond the pedal. Into Italy.
+            {language === "es" ? "Mas alla del pedal. Dentro de Italia." : "Beyond the pedal. Into Italy."}
           </p>
         </header>
 
@@ -113,7 +142,7 @@ export default function ItalianExperience() {
                     {current.iconSrc ? (
                       <img
                         src={current.iconSrc}
-                        alt="icon"
+                        alt={language === "es" ? "icono" : "icon"}
                         className="h-[22px] w-[22px] opacity-80 select-none"
                         draggable={false}
                         loading="lazy"
@@ -171,7 +200,7 @@ export default function ItalianExperience() {
                       type="button"
                       onClick={goPrev}
                       className="text-black/60 hover:text-black transition"
-                      aria-label="Previous"
+                      aria-label={language === "es" ? "Anterior" : "Previous"}
                     >
                       <span className="text-[34px] leading-none">←</span>
                     </button>
@@ -180,7 +209,7 @@ export default function ItalianExperience() {
                       type="button"
                       onClick={goNext}
                       className="text-black/60 hover:text-black transition"
-                      aria-label="Next"
+                      aria-label={language === "es" ? "Siguiente" : "Next"}
                     >
                       <span className="text-[34px] leading-none">→</span>
                     </button>

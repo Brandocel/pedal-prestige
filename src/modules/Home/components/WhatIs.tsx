@@ -1,6 +1,9 @@
 import entradaImg from "../assets/whatis/entrada.webp";
+import { useI18n } from "../../../i18n/i18n";
 
 export default function WhatIs() {
+  const { language } = useI18n();
+
   return (
     <section className="w-full bg-ivory">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10 lg:px-[80px] py-10 sm:py-14 lg:py-[80px]">
@@ -9,7 +12,7 @@ export default function WhatIs() {
           <div className="lg:col-span-5 flex w-full justify-center">
             <img
               src={entradaImg}
-              alt="Pedal Prestige Entrance"
+              alt={language === "es" ? "Entrada Pedal Prestige" : "Pedal Prestige Entrance"}
               className="
                 select-none
                 h-auto
@@ -41,7 +44,7 @@ export default function WhatIs() {
                   textShadow: "0 0 0 currentColor",
                 }}
               >
-                What is Pedal Prestige?
+                {language === "es" ? "Qué es Pedal Prestige?" : "What is Pedal Prestige?"}
               </h2>
 
 {/* SUBTÍTULO (cerca del título) */}
@@ -59,7 +62,7 @@ export default function WhatIs() {
   "
   style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
 >
-  More than a ride. A way of traveling.
+  {language === "es" ? "Más que una rodada. Una forma de viajar." : "More than a ride. A way of traveling."}
 </p>
 
 {/* ✅ BODY (más espacio desde el subtítulo) */}
@@ -123,21 +126,31 @@ export default function WhatIs() {
                 }}
               >
                 <p className="m-0">
-                Pedal Prestige ofrece la experiencia de travel cycling diseñada para personas que disfrutan el ciclismo, la comodidad, la Convivencia y la buena mesa.
+                {language === "es"
+                  ? "Pedal Prestige ofrece una experiencia de travel cycling para personas que disfrutan el ciclismo, la comodidad, la convivencia y la buena mesa."
+                  : "Pedal Prestige offers a travel cycling experience for people who value cycling, comfort, community and great dining."}
                 </p>
 
                 <p className="m-0 mt-3 lg:mt-[14px]">
-                Cada viaje es una combinación precisa de cultura, hospitalidad y comunidad.
+                {language === "es"
+                  ? "Cada viaje es una combinación precisa de cultura, hospitalidad y comunidad."
+                  : "Each journey is a precise blend of culture, hospitality and community."}
                 </p>
 
                 <p className="m-0 mt-3 lg:mt-[14px]">
-                Nada es genérico. Nada es improvisado.
+                {language === "es"
+                  ? "Nada es genérico. Nada es improvisado."
+                  : "Nothing is generic. Nothing is improvised."}
                   <br />
-                  Todo está pensado para crear recuerdos memorables sobre la bicicleta y debajo de ella.
+                  {language === "es"
+                    ? "Todo está pensado para crear recuerdos memorables sobre la bicicleta y fuera de ella."
+                    : "Everything is designed to create memorable moments on and off the bike."}
                 </p>
 
                 <p className="m-0 mt-3 lg:mt-[14px]">
-                No "organizamos tours." Diseñamos experiencias únicas.
+                {language === "es"
+                  ? 'No "organizamos tours". Diseñamos experiencias únicas.'
+                  : 'We do not "run tours". We design unique experiences.'}
                 </p>
               </div>
             </div>

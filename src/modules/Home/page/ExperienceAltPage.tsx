@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import wheel from "../assets/experiense/rueda.png";
 import chain from "../assets/experiense/cadena.svg";
 import bannerImage from "../assets/experiense/photo (1).jpg";
+import { useI18n } from "../../../i18n/i18n";
 
 const FEATURES = [
   {
@@ -32,6 +33,37 @@ const FEATURES = [
 ];
 
 export default function ExperienceAltPage() {
+  const { language } = useI18n();
+  const features =
+    language === "es"
+      ? [
+          {
+            title: "Llegada y bienvenida",
+            text: "El viaje comienza con una bienvenida cercana en la estancia, ajustes y acompañamiento, seguido de la instalación y una introducción a la experiencia en un entorno relajado.",
+          },
+          {
+            title: "Preparación y primeras rutas",
+            text: "Las bicicletas se ensamblan y revisan con detalle para iniciar con confianza. Las primeras rutas están pensadas para conectar con el paisaje y con los pueblos de la región.",
+          },
+          {
+            title: "Paisajes icónicos",
+            text: "Cada día recorre rutas curadas que equilibran reto y disfrute. De caminos escénicos a destinos emblemáticos, cada rodada busca conectar con la esencia del lugar.",
+          },
+          {
+            title: "Cultura y gastronomía",
+            text: "Más allá del ciclismo, el viaje se enriquece con encuentros locales, experiencias culinarias seleccionadas y momentos culturales con identidad propia.",
+          },
+          {
+            title: "Momentos para compartir",
+            text: "Durante el recorrido, la cobertura profesional de foto y video captura la experiencia para revivir y compartir recuerdos mucho despues del viaje.",
+          },
+          {
+            title: "Una experiencia fluida",
+            text: "La logistica, traslados, hospedaje y planeacion diaria se gestionan con cuidado para que cada viajero se enfoque por completo en vivir la experiencia.",
+          },
+        ]
+      : FEATURES;
+
   return (
     <main className="w-full bg-[var(--prestige-ivory)]" id="experience-page">
       <NavbarAlt />
@@ -46,14 +78,16 @@ export default function ExperienceAltPage() {
                 fontWeight: 600,
               }}
             >
-              The Pedal Prestige Experience
+              {language === "es" ? "La experiencia Pedal Prestige" : "The Pedal Prestige Experience"}
             </h1>
 
             <p
               className="mx-auto mt-[10px] max-w-[760px] text-[clamp(15px,1.25vw,18px)] leading-[1.3] text-[#2F3A45]"
               style={{ fontFamily: "Hubballi, system-ui, sans-serif", fontWeight: 400 }}
             >
-              A curated cycling journey designed around comfort, culture and connection.
+              {language === "es"
+                ? "Un viaje ciclista curado alrededor del confort, la cultura y la conexión."
+                : "A curated cycling journey designed around comfort, culture and connection."}
             </p>
 
             <div className="mx-auto mt-[clamp(36px,3.9vw,56px)] flex items-center justify-center">
@@ -67,27 +101,33 @@ export default function ExperienceAltPage() {
 
             <div className="mx-auto mt-[clamp(36px,3.9vw,56px)] w-full max-w-[822px] space-y-[14px] text-[clamp(14px,1.11vw,16px)] leading-[1.26] text-[#1F2A35]">
               <p style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}>
-                Each Pedal Prestige journey is thoughtfully designed to go beyond the ride.
+                {language === "es"
+                  ? "Cada viaje de Pedal Prestige está diseñado para ir mucho más allá de la rodada."
+                  : "Each Pedal Prestige journey is thoughtfully designed to go beyond the ride."}
               </p>
               <p style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}>
-                Over the course of several days, travelers move through iconic landscapes, local culture and carefully selected experiences — all at a rhythm that allows for enjoyment, discovery and comfort.
+                {language === "es"
+                  ? "A lo largo de varios días, los viajeros recorren paisajes icónicos, cultura local y experiencias cuidadosamente seleccionadas, a un ritmo que permite disfrutar, descubrir y descansar."
+                  : "Over the course of several days, travelers move through iconic landscapes, local culture and carefully selected experiences - all at a rhythm that allows for enjoyment, discovery and comfort."}
               </p>
               <p style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}>
-                From the first welcome to the final ride, every moment is curated to create a seamless and memorable experience.
+                {language === "es"
+                  ? "Desde la primera bienvenida hasta la última rodada, cada momento se cura para crear una experiencia fluida y memorable."
+                  : "From the first welcome to the final ride, every moment is curated to create a seamless and memorable experience."}
               </p>
             </div>
 
             <div className="mx-auto mt-[clamp(36px,3.9vw,56px)] overflow-hidden">
               <img
                 src={bannerImage}
-                alt="Pedal Prestige riders"
+                alt={language === "es" ? "Ciclistas de Pedal Prestige" : "Pedal Prestige riders"}
                 className="mx-auto h-[clamp(190px,25.28vw,364px)] w-[min(100%,1280px)] object-cover"
                 draggable={false}
               />
             </div>
 
             <div className="mx-auto mt-[clamp(36px,3.9vw,56px)] grid w-full max-w-[1281px] grid-cols-3 gap-x-[clamp(16px,3.33vw,48px)] gap-y-[clamp(36px,3.9vw,56px)] max-lg:grid-cols-2 max-sm:grid-cols-1">
-              {FEATURES.map((item) => (
+              {features.map((item) => (
                 <article key={item.title} className="mx-auto w-full max-w-[395px] min-h-[154px]">
                   <img
                     src={wheel}
@@ -127,7 +167,7 @@ export default function ExperienceAltPage() {
                 justifyContent: "center",
               }}
             >
-              CHOOSE YOUR EXPERIENCE
+              {language === "es" ? "ELIGE TU EXPERIENCIA" : "CHOOSE YOUR EXPERIENCE"}
             </a>
           </div>
         </div>

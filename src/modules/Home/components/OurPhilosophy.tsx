@@ -2,7 +2,11 @@ type Props = {
   ornamentSrc?: string;
 };
 
+import { useI18n } from "../../../i18n/i18n";
+
 export default function OurPhilosophy({ ornamentSrc }: Props) {
+  const { language } = useI18n();
+
   return (
     <section
       className="w-full"
@@ -29,7 +33,7 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                 fontWeight: 700,
               }}
             >
-              Our Philosophy
+              {language === "es" ? "Nuestra filosofia" : "Our Philosophy"}
             </h2>
 
             <p
@@ -49,7 +53,7 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                 letterSpacing: "0.02em",
               }}
             >
-              True luxury is how it feels.
+              {language === "es" ? "El verdadero lujo es como se siente." : "True luxury is how it feels."}
             </p>
           </div>
 
@@ -77,10 +81,9 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                   textWrap: "auto",
                 }}
               >
-                Pedal Prestige cuida los detalles y enfoca tu experiencia en la
-                sensación de estar exactamente donde tienes que estar.
-                Nuestro propósito es diseñar momentos que se sientan naturales,
-                cercanos y profundamente humanos.
+                {language === "es"
+                  ? "Pedal Prestige cuida los detalles y enfoca tu experiencia en la sensación de estar exactamente donde tienes que estar. Nuestro propósito es diseñar momentos que se sientan naturales, cercanos y profundamente humanos."
+                  : "Pedal Prestige cares for every detail and centers your journey around the feeling of being exactly where you are meant to be. Our purpose is to design moments that feel natural, close and deeply human."}
               </p>
 
               {/* Párrafo 2 */}
@@ -107,7 +110,7 @@ export default function OurPhilosophy({ ornamentSrc }: Props) {
                   whiteSpace: "pre-line",
                 }}
               >
-                Aquí, todo tiene un porqué.
+                {language === "es" ? "Aqui, todo tiene un porque." : "Here, everything has a reason."}
                 <br className="max-sm:hidden" />
               </p>
             </div>

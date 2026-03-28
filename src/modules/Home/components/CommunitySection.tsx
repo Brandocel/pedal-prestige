@@ -6,14 +6,25 @@ type Props = {
   body?: string;
 };
 
+import { useI18n } from "../../../i18n/i18n";
+
 export default function CommunitySection({
   imageFront,
   imageBack,
-  title = "Community",
-  subtitle = "Like-minded travelers.",
-  body = `Convocamos grupos pequeños, formados por personas que comparten una misma sensibilidad: pasión por el ciclismo, respeto por la cultura y que saben disfrutar de la vida.
-Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a crear recuerdos juntos.`,
+  title,
+  subtitle,
+  body,
 }: Props) {
+  const { language } = useI18n();
+  const resolvedTitle = title ?? (language === "es" ? "Comunidad" : "Community");
+  const resolvedSubtitle =
+    subtitle ?? (language === "es" ? "Viajeros con la misma sintonia." : "Like-minded travelers.");
+  const resolvedBody =
+    body ??
+    (language === "es"
+      ? "Convocamos grupos pequenos, formados por personas que comparten una misma sensibilidad: pasion por el ciclismo, respeto por la cultura y gusto por disfrutar la vida.\nPedal Prestige te invita a formar parte del camino, sentarte a la mesa y crear recuerdos juntos."
+      : "We bring together small groups of travelers who share the same sensitivity: passion for cycling, respect for culture, and a love for enjoying life.\nPedal Prestige invites you to be part of the road, share the table, and create meaningful memories together.");
+
   return (
     <section className="w-full bg-[#F3F0E9]">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10 lg:px-[80px] pt-16 sm:pt-20 lg:pt-[120px] pb-0">
@@ -38,7 +49,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
           >
             <img
               src={imageBack}
-              alt="background"
+              alt={language === "es" ? "fondo" : "background"}
               draggable={false}
               className="h-full w-full select-none object-cover"
               style={{ filter: "grayscale(1)", opacity: 0.9 }}
@@ -58,7 +69,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
           >
             <img
               src={imageFront}
-              alt="front"
+              alt={language === "es" ? "frontal" : "front"}
               draggable={false}
               className="h-full w-full select-none object-cover"
             />
@@ -86,7 +97,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
                 lineHeight: "100%",
               }}
             >
-              {title}
+              {resolvedTitle}
             </h3>
 
             <p
@@ -98,7 +109,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
                 lineHeight: "100%",
               }}
             >
-              {subtitle}
+              {resolvedSubtitle}
             </p>
 
             <p
@@ -112,7 +123,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
                 whiteSpace: "pre-line",
               }}
             >
-              {body}
+              {resolvedBody}
             </p>
           </div>
         </div>
@@ -127,7 +138,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
             <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/10" }}>
               <img
                 src={imageBack}
-                alt="background"
+                alt={language === "es" ? "fondo" : "background"}
                 draggable={false}
                 className="absolute inset-0 h-full w-full select-none object-cover"
                 style={{ filter: "grayscale(1)", opacity: 0.9 }}
@@ -139,7 +150,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
               <div className="relative w-full overflow-hidden shadow-sm" style={{ aspectRatio: "16/11" }}>
                 <img
                   src={imageFront}
-                  alt="front"
+                  alt={language === "es" ? "frontal" : "front"}
                   draggable={false}
                   className="absolute inset-0 h-full w-full select-none object-cover"
                 />
@@ -156,7 +167,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
                   lineHeight: "100%",
                 }}
               >
-                {title}
+                {resolvedTitle}
               </h3>
 
               <p
@@ -167,7 +178,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
                   lineHeight: "100%",
                 }}
               >
-                {subtitle}
+                {resolvedSubtitle}
               </p>
 
               <p
@@ -180,7 +191,7 @@ Pedal Prestige te invita a formar parte del camino, a sentarte a la mesa y a cre
                   whiteSpace: "pre-line",
                 }}
               >
-                {body}
+                {resolvedBody}
               </p>
             </div>
           </div>

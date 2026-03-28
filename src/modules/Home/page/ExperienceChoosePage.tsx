@@ -2,9 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import NavbarAlt from "../components/NavbarAlt";
 import Footer from "../components/Footer";
 import arrowIcon from "../assets/experiense/→ (1).svg";
-import { EXPERIENCE_OPTIONS } from "../data/experienceOptions";
+import { getExperienceOptions } from "../data/experienceOptions";
+import { useI18n } from "../../../i18n/i18n";
 
 export default function ExperienceChoosePage() {
+  const { language } = useI18n();
+  const options = getExperienceOptions(language);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
@@ -49,14 +52,16 @@ export default function ExperienceChoosePage() {
                 fontWeight: 700,
               }}
             >
-              Choose Your Experience
+              {language === "es" ? "Elige Tu Experiencia" : "Choose Your Experience"}
             </h1>
 
             <p
               className="mx-auto mt-[10px] max-w-[980px] text-[clamp(14px,1.11vw,16px)] leading-[1.25] text-[#2E3944]"
               style={{ fontFamily: "Hubballi, system-ui, sans-serif", fontWeight: 400 }}
             >
-              Select the level of comfort, service and immersion that best suits your journey.
+              {language === "es"
+                ? "Selecciona el nivel de confort, servicio e inmersion que mejor se adapta a tu viaje."
+                : "Select the level of comfort, service and immersion that best suits your journey."}
             </p>
 
             <div className="relative mx-auto mt-[clamp(36px,3.3vw,48px)] w-full max-w-[1396px]">
@@ -64,7 +69,7 @@ export default function ExperienceChoosePage() {
                 type="button"
                 onClick={() => scrollCards("left")}
                 disabled={!canScrollLeft}
-                aria-label="Previous experiences"
+                aria-label={language === "es" ? "Experiencias anteriores" : "Previous experiences"}
                 className="absolute left-[-14px] top-1/2 z-20 flex h-[52px] w-[52px] -translate-y-1/2 items-center justify-center bg-transparent disabled:cursor-not-allowed disabled:opacity-35"
               >
                 <img src={arrowIcon} alt="" aria-hidden="true" className="h-[30px] w-[30px] rotate-180" />
@@ -76,7 +81,7 @@ export default function ExperienceChoosePage() {
                 className="no-scrollbar flex gap-[clamp(14px,1.3vw,19px)] overflow-x-auto pb-[6px]"
                 style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               >
-                {EXPERIENCE_OPTIONS.map((option) => (
+                {options.map((option) => (
                   <article
                     key={option.title}
                     className="flex min-h-[540px] w-[calc((100%-38px)/3)] min-w-[260px] flex-none flex-col border border-[#ECE8E2] bg-[#F8F6F2] p-[clamp(40px,1.8vw,30px)] text-left max-lg:min-h-[470px] max-sm:min-h-[430px]"
@@ -109,7 +114,7 @@ export default function ExperienceChoosePage() {
                     className="mt-[clamp(12px,1.1vw,15px)] text-[clamp(13px,0.95vw,16px)] leading-[1.2] text-[#2C3742]"
                     style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}
                   >
-                    Includes:
+                    {language === "es" ? "Incluye:" : "Includes:"}
                   </p>
 
                   <ul className="mt-[6px] space-y-[0px] text-[clamp(13px,0.95vw,16px)] leading-[2.06] text-[#2D3742]" style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}>
@@ -144,7 +149,7 @@ export default function ExperienceChoosePage() {
                 type="button"
                 onClick={() => scrollCards("right")}
                 disabled={!canScrollRight}
-                aria-label="Next experiences"
+                aria-label={language === "es" ? "Siguientes experiencias" : "Next experiences"}
                 className="absolute right-[-14px] top-1/2 z-20 flex h-[52px] w-[52px] -translate-y-1/2 items-center justify-center bg-transparent disabled:cursor-not-allowed disabled:opacity-35"
               >
                 <img src={arrowIcon} alt="" aria-hidden="true" className="h-[30px] w-[30px]" />
@@ -155,7 +160,9 @@ export default function ExperienceChoosePage() {
               className="mx-auto mt-[clamp(24px,2.5vw,36px)] max-w-[1080px] text-center text-[clamp(12px,0.9vw,13px)] leading-[1.25] text-[#2F3A45]"
               style={{ fontFamily: "BaskervilleLocal, Libre Baskerville, serif", fontWeight: 400 }}
             >
-              All experiences are guided, curated and supported by the Pedal Prestige team to ensure quality, safety and attention to detail throughout the journey.
+              {language === "es"
+                ? "Todas las experiencias son guiadas, curadas y acompañadas por el equipo de Pedal Prestige para asegurar calidad, seguridad y atención al detalle durante todo el viaje."
+                : "All experiences are guided, curated and supported by the Pedal Prestige team to ensure quality, safety and attention to detail throughout the journey."}
             </p>
           </div>
         </div>

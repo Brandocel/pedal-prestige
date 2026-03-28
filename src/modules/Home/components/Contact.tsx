@@ -1,4 +1,7 @@
+import { useI18n } from "../../../i18n/i18n";
+
 export default function Contact() {
+	const { t } = useI18n();
 	const formSubmitEmail = "info@pedalprestige.com.mx";
 	const formSubmitAction = `https://formsubmit.co/${formSubmitEmail}`;
 	const formSubmitNext =
@@ -18,7 +21,7 @@ export default function Contact() {
 								fontWeight: 600,
 							}}
 						>
-							Contact us
+							{t("contact.title")}
 						</h2>
 
 						<p
@@ -28,7 +31,7 @@ export default function Contact() {
 								fontWeight: 400,
 							}}
 						>
-							Experience Italy differently.
+							{t("contact.subtitle")}
 						</p>
 
 						<p
@@ -38,7 +41,7 @@ export default function Contact() {
 								fontWeight: 400,
 							}}
 						>
-							Convocamos un aforo limitado, vive la experiencia.
+							{t("contact.body")}
 						</p>
 					</div>
 
@@ -50,7 +53,7 @@ export default function Contact() {
 								fontWeight: 600,
 							}}
 						>
-							Apply for an upcoming experience
+							{t("contact.apply")}
 						</h3>
 
 						<form
@@ -58,7 +61,7 @@ export default function Contact() {
 							method="POST"
 							className="mt-[clamp(14px,1.4vw,20px)] grid min-h-[clamp(380px,31vw,460px)] grid-cols-2 gap-x-[clamp(10px,0.9vw,13px)] gap-y-[clamp(10px,0.9vw,13px)]"
 						>
-							<input type="hidden" name="_subject" value="Nueva solicitud desde Pedal Prestige" />
+							<input type="hidden" name="_subject" value={t("contact.subject")} />
 							<input type="hidden" name="_captcha" value="false" />
 							<input type="hidden" name="_template" value="table" />
 							<input type="hidden" name="_next" value={formSubmitNext} />
@@ -66,7 +69,7 @@ export default function Contact() {
 							<input
 								type="text"
 								name="nombre"
-								placeholder="NOMBRE COMPLETO"
+								placeholder={t("contact.fullName")}
 								className="col-span-2 h-[clamp(42px,3.2vw,48px)] border border-[#7A8085] bg-transparent px-[14px] text-[clamp(13px,1vw,15px)] leading-[1] tracking-[0.03em] text-[#0E1A24] placeholder:text-[#6A7179] focus:outline-none"
 								style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
 								required
@@ -75,7 +78,7 @@ export default function Contact() {
 							<input
 								type="email"
 								name="email"
-								placeholder="EMAIL"
+								placeholder={t("contact.email")}
 								className="col-span-2 h-[clamp(42px,3.2vw,48px)] border border-[#7A8085] bg-transparent px-[14px] text-[clamp(13px,1vw,15px)] leading-[1] tracking-[0.03em] text-[#0E1A24] placeholder:text-[#6A7179] focus:outline-none"
 								style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
 								required
@@ -84,7 +87,7 @@ export default function Contact() {
 							<input
 								type="tel"
 								name="telefono"
-								placeholder="TELÉFONO"
+								placeholder={t("contact.phone")}
 								className="h-[clamp(42px,3.2vw,48px)] border border-[#7A8085] bg-transparent px-[14px] text-[clamp(13px,1vw,15px)] leading-[1] tracking-[0.03em] text-[#0E1A24] placeholder:text-[#6A7179] focus:outline-none"
 								style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
 							/>
@@ -92,14 +95,14 @@ export default function Contact() {
 							<input
 								type="text"
 								name="ciudad"
-								placeholder="CIUDAD"
+								placeholder={t("contact.city")}
 								className="h-[clamp(42px,3.2vw,48px)] border border-[#7A8085] bg-transparent px-[14px] text-[clamp(13px,1vw,15px)] leading-[1] tracking-[0.03em] text-[#0E1A24] placeholder:text-[#6A7179] focus:outline-none"
 								style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
 							/>
 
 							<textarea
 								name="mensaje"
-								placeholder="MENSAJE..."
+								placeholder={t("contact.message")}
 								rows={4}
 								className="col-span-2 h-[clamp(100px,7.5vw,110px)] resize-none border border-[#7A8085] bg-transparent px-[14px] py-[10px] text-[clamp(13px,1vw,15px)] leading-[1.3] tracking-[0.03em] text-[#0E1A24] placeholder:text-[#6A7179] focus:outline-none"
 								style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
@@ -111,7 +114,7 @@ export default function Contact() {
 								className="col-span-2 h-[clamp(42px,3.2vw,48px)] border border-[#7A8085] bg-transparent text-[clamp(13px,1vw,15px)] leading-[1] tracking-[0.06em] text-[#0E1A24]"
 								style={{ fontFamily: "Hubballi, system-ui, sans-serif" }}
 							>
-								REQUEST YOUR JOURNEY
+								{t("contact.cta")}
 							</button>
 						</form>
 					</div>
